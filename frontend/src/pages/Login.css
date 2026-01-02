@@ -1,0 +1,141 @@
+.login-main-container {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+.login-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEF0F7;
+    padding: 2rem;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    padding: 2rem 1.75rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login-form h2 {
+    color: #0B4F6C;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.login-subtitle {
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #0B4F6C;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #46A2C3;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    font-size: 0.8rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #46A2C3;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-submit-btn {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #46A2C3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.login-submit-btn:hover {
+    background-color: #0B4F6C;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.register-link a {
+    color: #46A2C3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.login-img-container {
+    flex: 1;
+    background-color: #46A2C3;
+}
