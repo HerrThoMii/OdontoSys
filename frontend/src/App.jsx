@@ -1,19 +1,30 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import Navbar from './components/Navbar/Navbar'
 import Login from './pages/Login/Login'
+import Register from './pages/Register/Register'
 
-function App() {
+function AppContent() {
+  const location = useLocation()
+  const hideNavbarRoutes = ['/login', '/register']
+  const shouldShowNavbar = !hideNavbarRoutes.includes(location.pathname)
 
   return (
     <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/login" element={<Login/>} />
-        </Routes>
-      </Router>
+      {shouldShowNavbar && <Navbar />}
+      <Routes>
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
+      </Routes>
     </>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   )
 }
 
