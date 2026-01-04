@@ -129,23 +129,6 @@
     background-color: #0B4F6C;
 }
 
-.register-link {
-    text-align: center;
-    margin-top: 1.25rem;
-    font-size: 0.8rem;
-    color: #666;
-}
-
-.register-link a {
-    color: #46A2C3;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
-}
-
 .login-img-container {
     flex: 1;
     background-color: #46A2C3;

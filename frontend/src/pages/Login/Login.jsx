@@ -1,6 +1,13 @@
+import { useNavigate } from 'react-router-dom'
 import styles from './Login.module.css'
 
 function Login() {
+    const navigate = useNavigate()
+
+    const handleLoginClick = () => {
+        //For now just redirects, later add login validation
+        navigate('/home')
+    }
 
     return (
         <>
@@ -8,7 +15,7 @@ function Login() {
                 <div className={styles['login-card']}>
                     <div className={styles['login-form-container']}>
                         <div className={styles['login-form']}>
-                            <h1>Login</h1>
+                            <h1>Dentist Login</h1>
                             <form>
                                 <div className={styles['form-group']}>
                                     <label htmlFor="email">Email</label>
@@ -33,20 +40,17 @@ function Login() {
                                         required
                                     />
                                 </div>
-                                <button type="submit" className={styles['login-submit-btn']}>
+                                <button type="submit" onClick={handleLoginClick} className={styles['login-submit-btn']}>
                                     Login
                                 </button>
                             </form>
-                            <p className={styles['register-link']}>
-                                Not registered yet? <a href="/register">Create an Account</a>
-                            </p>
                         </div>
                     </div>
                     <div className={styles['login-img-container']}>
                         <div className={styles['img-content']}>
                             <div className={styles['img-text']}>
-                                <h3>Welcome back!</h3>
-                                <p>Access your dental records, upcoming appointments, and treatment history all in one place.</p>
+                                <h3>Dental Practice Management</h3>
+                                <p>Manage your appointments, patient records, and treatment plans efficiently all in one place.</p>
                             </div>
                         </div>
                     </div>

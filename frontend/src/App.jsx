@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import Navbar from './components/Navbar/Navbar'
 import Login from './pages/Login/Login'
-import Register from './pages/Register/Register'
+import Home from './pages/Home/Home'
 
 function AppContent() {
   const location = useLocation()
@@ -14,7 +14,7 @@ function AppContent() {
       {shouldShowNavbar && <Navbar />}
       <Routes>
         <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>} />
+        <Route path="/home" element={<Home/>} />
       </Routes>
     </>
   )
